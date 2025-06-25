@@ -2,7 +2,7 @@
 // Microsoft Visual C++ generated include file.
 // Used by analyse.rc
 //
-#include "../version.h"
+#include "../version/version.h"
 #define IDOK2                           3
 #define IDC_DO_CLOSE                    1001
 #define IDC_BUT_SEARCH                  1002

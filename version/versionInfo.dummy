@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #define SVNREVINFO    "0:0 "
 #define SVNREVISION   "0"
 #define SVNMODIFIED   "Invalid"
-#define SVNDATE       "0000/00/00 00:00:00"
+#define SVNDATE       "1234/06/26 00:00:00"
 #define SVNREVRANGE   "00"
 #define SVNMIXED      "Single revision"
 #define SVNURL        "https://svn.code.sf.net/p/analyseplugin/code/trunk"

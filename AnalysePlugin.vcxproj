@@ -129,12 +129,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Message>Version info...1</Message>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\tcl;.\version;.\Dlg;.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FEATURE_RESVIEW_POS_KEEP_AT_SEARCH;__STDC_WANT_SECURE_LIB__=1;_UNICODE;UNICODE;CONFIG_DIALOG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;WIN32;_DEBUG;_WINDOWS;_USRDLL;AnalysePlugin_EXPORTS;RESULT_COLORING;TIXML_USE_STL;TIXMLA_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -164,7 +164,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
       <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -196,7 +196,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <PreBuildEvent>
       <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
@@ -228,11 +228,11 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
       <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\tcl;.\version;.\Dlg;.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FEATURE_RESVIEW_POS_KEEP_AT_SEARCH;_UNICODE;_CRT_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;_CRT_NON_CONFORMING_SWPRINTFS;UNICODE;CONFIG_DIALOG;WIN32;NDEBUG;_WINDOWS;_USRDLL;AnalysePlugin_EXPORTS;RESULT_COLORING;TIXML_USE_STL;TIXMLA_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader />
@@ -260,7 +260,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
       <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -292,7 +292,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <PreBuildEvent>
       <Message>Version info...</Message>
-      <Command>versionInfo.bat $(ProjectDir)</Command>
+      <Command>versionInfo.bat $(ProjectDir)\version</Command>
     </PreBuildEvent>
     <ClCompile>
       <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -322,21 +322,21 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AddCtxDlg.cpp" />
     <ClCompile Include="AnalysePlugin.cpp" />
+    <ClCompile Include="Dlg\AddCtxDlg.cpp" />
+    <ClCompile Include="Dlg\ConfigDialog.cpp" />
+    <ClCompile Include="Dlg\HelpDialog.cpp" />
     <ClCompile Include="DockingFeature\ColourPicker2.cpp" />
     <ClCompile Include="DockingFeature\ColourPopup.cpp" />
     <ClCompile Include="lexilla\lexlib\LexAccessor.cxx" />
     <ClCompile Include="PowerEditor\src\EncodingMapper.cpp" />
     <ClCompile Include="PowerEditor\src\MISC\Common\Common.cpp" />
-    <ClCompile Include="ConfigDialog.cpp" />
     <ClCompile Include="PowerEditor\src\MISC\Common\FileInterface.cpp" />
     <ClCompile Include="PowerEditor\src\Parameters.cpp" />
     <ClCompile Include="PowerEditor\src\ScintillaComponent\ScintillaEditView.cpp" />
     <ClCompile Include="PowerEditor\src\WinControls\ContextMenu\ContextMenu.cpp" />
     <ClCompile Include="FindConfigDoc.cpp" />
     <ClCompile Include="DockingFeature\FindDlg.cpp" />
-    <ClCompile Include="HelpDialog.cpp" />
     <ClCompile Include="DockingFeature\PleaseWaitDlg.cpp" />
     <ClCompile Include="ScintillaSearchView.cpp" />
     <ClCompile Include="PowerEditor\src\WinControls\StaticDialog\StaticDialog.cpp" />
@@ -348,26 +348,28 @@
     <ClCompile Include="lexilla\lexlib\PropSetSimple.cxx" />
     <ClCompile Include="lexilla\lexlib\StyleContext.cxx" />
     <ClCompile Include="lexilla\lexlib\WordList.cxx" />
-    <ClCompile Include="tclColor.cpp" />
-    <ClCompile Include="tclFindResultDlg.cpp" />
-    <ClCompile Include="tclFindResultDoc.cpp" />
     <ClCompile Include="DockingFeature\tclFindResultSearchDlg.cpp" />
-    <ClCompile Include="tclMainViewLexer.cpp" />
-    <ClCompile Include="tclPattern.cpp" />
-    <ClCompile Include="tclPatternList.cpp" />
-    <ClCompile Include="tclResult.cpp" />
-    <ClCompile Include="tclResultList.cpp" />
-    <ClCompile Include="tclTableview.cpp" />
     <ClCompile Include="PowerEditor\src\TinyXml\tinystr.cpp" />
     <ClCompile Include="PowerEditor\src\TinyXml\tinyxml.cpp" />
     <ClCompile Include="PowerEditor\src\TinyXml\tinyxmlerror.cpp" />
     <ClCompile Include="PowerEditor\src\TinyXml\tinyxmlparser.cpp" />
     <ClCompile Include="PowerEditor\src\WinControls\AboutDlg\URLCtrl.cpp" />
     <ClCompile Include="PowerEditor\src\Utf8_16.cpp" />
+    <ClCompile Include="tcl\tclColor.cpp" />
+    <ClCompile Include="tcl\tclFindResultDlg.cpp" />
+    <ClCompile Include="tcl\tclFindResultDoc.cpp" />
+    <ClCompile Include="tcl\tclMainViewLexer.cpp" />
+    <ClCompile Include="tcl\tclPattern.cpp" />
+    <ClCompile Include="tcl\tclPatternList.cpp" />
+    <ClCompile Include="tcl\tclResult.cpp" />
+    <ClCompile Include="tcl\tclResultList.cpp" />
+    <ClCompile Include="tcl\tclTableview.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AddCtxDlg.h" />
     <ClInclude Include="AnalysePlugin.h" />
+    <ClInclude Include="Dlg\AddCtxDlg.h" />
+    <ClInclude Include="Dlg\ConfigDialog.h" />
+    <ClInclude Include="Dlg\HelpDialog.h" />
     <ClInclude Include="DockingFeature\ColourPopup.h" />
     <ClInclude Include="lexilla\include\Lexilla.h" />
     <ClInclude Include="lexilla\lexlib\LexAccessor.h" />
@@ -375,13 +377,11 @@
     <ClInclude Include="PowerEditor\src\ScintillaComponent\ScintillaEditView.h" />
     <ClInclude Include="scintilla\include\BoostRegexSearch.h" />
     <ClInclude Include="DockingFeature\ColourPicker2.h" />
-    <ClInclude Include="ConfigDialog.h" />
     <ClInclude Include="PowerEditor\src\WinControls\DockingWnd\Docking.h" />
     <ClInclude Include="PowerEditor\src\WinControls\DockingWnd\DockingDlgInterface.h" />
     <ClInclude Include="PowerEditor\src\WinControls\DockingWnd\dockingResource.h" />
     <ClInclude Include="FindConfigDoc.h" />
     <ClInclude Include="DockingFeature\FindDlg.h" />
-    <ClInclude Include="HelpDialog.h" />
     <ClInclude Include="myDebug.h" />
     <ClInclude Include="MyPlugin.h" />
     <ClInclude Include="PowerEditor\src\MISC\PluginsManager\Notepad_plus_msgs.h" />
@@ -395,26 +395,24 @@
     <ClInclude Include="PowerEditor\src\WinControls\StaticDialog\StaticDialog.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="DockingFeature\tclComboBoxCtrl.h" />
-    <ClInclude Include="tclColor.h" />
-    <ClInclude Include="tclFindResultDlg.h" />
-    <ClInclude Include="tclFindResultDoc.h" />
     <ClInclude Include="DockingFeature\tclFindResultSearchDlg.h" />
-    <ClInclude Include="tclMainViewLexer.h" />
-    <ClInclude Include="tclPattern.h" />
-    <ClInclude Include="tclPatternList.h" />
-    <ClInclude Include="tclResult.h" />
-    <ClInclude Include="tclResultList.h" />
-    <ClInclude Include="tclTableview.h" />
     <ClInclude Include="PowerEditor\src\TinyXml\tinystr.h" />
     <ClInclude Include="PowerEditor\src\TinyXml\tinyxml.h" />
     <ClInclude Include="PowerEditor\src\WinControls\Window.h" />
-    <ClInclude Include="version.h" />
+    <ClInclude Include="tcl\tclColor.h" />
+    <ClInclude Include="tcl\tclFindResultDlg.h" />
+    <ClInclude Include="tcl\tclFindResultDoc.h" />
+    <ClInclude Include="tcl\tclMainViewLexer.h" />
+    <ClInclude Include="tcl\tclPattern.h" />
+    <ClInclude Include="tcl\tclPatternList.h" />
+    <ClInclude Include="tcl\tclPosInfo.h" />
+    <ClInclude Include="tcl\tclResult.h" />
+    <ClInclude Include="tcl\tclResultList.h" />
+    <ClInclude Include="tcl\tcltableview.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icons\text1.bin" />
     <None Include="versionInfo.bat" />
-    <None Include="versionInfo.tags" />
-    <None Include="versionInfo.dummy" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\analyse.bmp" />
