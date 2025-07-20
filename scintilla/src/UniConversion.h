@@ -8,6 +8,8 @@
 #ifndef UNICONVERSION_H
 #define UNICONVERSION_H
 
+#include <string> // Ensures std::wstring is available
+
 namespace Scintilla::Internal {
 
 constexpr int UTF8MaxBytes = 4;

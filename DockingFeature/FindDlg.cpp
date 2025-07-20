@@ -131,7 +131,7 @@ void FindDlg::setSelectedPattern(int index) {
 
 void FindDlg::doSearch() {
    DBG0("FindDlg::doSearch()");
-   // make sure last edited config values are tsored into the patterns
+   // make sure last edited config values are stored into the patterns
    if(mTableView.getRowCount() < 1) {
       ::SendMessage(getHSelf(), WM_COMMAND, IDC_BUT_UPD, (LPARAM)0);
    } else {
@@ -387,6 +387,12 @@ INT_PTR CALLBACK FindDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM lParam
                contextmenu.display(pt);
                return TRUE; 
             }
+         case IDC_BUT_HISTORY:
+         {
+             OutputDebugStringA(LPCSTR("清除结果列表-Clear the result list\n"));
+             mResultList.clear();
+             return TRUE;
+         }
          // case IDC_CTXCFG_LOADX_0 .. IDC_CTXCFG_LOADX_E is handled in default case!
          case IDC_CTXCFG_LOADRESET:
             {

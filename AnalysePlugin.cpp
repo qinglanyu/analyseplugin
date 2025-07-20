@@ -526,7 +526,7 @@ BOOL AnalysePlugin::doSearch(tclResultList& resultList)
       _findResult.display();
    }
    _findResult.setCodePage(execute(teNppWindows::scnActiveHandle, SCI_GETCODEPAGE));
-   // check whether searchwindow is the same as before
+   // check whether search window is the same as before
    bool bReSearch = false;
    generic_string currentfile;
    if (!bCheckLastFileNameSame(currentfile)){
@@ -534,7 +534,7 @@ BOOL AnalysePlugin::doSearch(tclResultList& resultList)
       setSearchFileName(currentfile);
       bReSearch = true;
    }
-   // check if we have the correct linenumcolumnsize
+   // check if we have the correct line num column size
    tiLine iNumLines = (tiLine)execute(teNppWindows::scnActiveHandle, SCI_GETLINECOUNT, 0, (LPARAM)0);
    // easy way of int(log10(iNumLines))
    int iLineNumColSize = (iNumLines<10)?1:
@@ -547,7 +547,7 @@ BOOL AnalysePlugin::doSearch(tclResultList& resultList)
                          (iNumLines<100000000)?8:
                          (iNumLines<1000000000)?9:10;
    if(_findResult.getLineNumColSize() != iLineNumColSize){
-      // when chaning the column size we have to refill the text
+      // when changing the column size we have to refill the text
       _findResult.setLineNumColSize(iLineNumColSize);
       bReSearch = true;
       DBG0("doSearch(): re search because iLineNumColSize changed");

@@ -2,8 +2,10 @@
 // Microsoft Visual C++ generated include file.
 // Used by analyse.rc
 //
-#include "../version/version.h"
+#define SVNREVISION_N                   0
+#define VER_FILEVERSION_MAYOR           1
 #define IDOK2                           3
+#define VER_FILEVERSION_MINOR           14
 #define IDC_DO_CLOSE                    1001
 #define IDC_BUT_SEARCH                  1002
 #define IDC_FINDFIRST                   1003
@@ -15,6 +17,8 @@
 #define IDC_BUT_LOAD                    1009
 #define IDC_BUT_SAVE                    1010
 #define IDC_CMB_COLOR                   1011
+#define IDC_BUT_LOAD2                   1011
+#define IDC_BUT_HISTORY                 1011
 #define IDC_CHK_HIDE                    1012
 #define IDC_BUT_MOVE_UP                 1013
 #define IDC_CHK_DO_SEARCH               1014
@@ -74,7 +78,6 @@
 #define IDC_CHK_RESWORDWRAP             1068
 #define IDC_BUT_ORDER                   1069
 #define IDC_CTXCFG_LOADX_0              1070
-// 1070 - 1100 is reserved for loading files
 #define IDC_CTXCFG_LOADX_E              1100
 #define IDC_CHK_JUMP2EDIT               1101
 #define IDC_BTN_ADDCONTEXT              1102

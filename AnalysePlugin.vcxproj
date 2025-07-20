@@ -108,7 +108,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)bin\$(IntDir)plugins\$(ProjectName)\</OutDir>
+    <OutDir>..\git-repos\notepad-plus-plus\PowerEditor\visual.net\x64\Debug\plugins\AnalysePlugin\</OutDir>
     <IntDir>$(IntDir)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -121,7 +121,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)bin\$(IntDir)plugins\$(ProjectName)\</OutDir>
+    <OutDir>..\git-repos\notepad-plus-plus\PowerEditor\visual.net\x64\Debug\plugins\AnalysePlugin\</OutDir>
     <IntDir>$(IntDir)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -140,7 +140,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -168,7 +168,7 @@
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Dlg;.\tcl;.\version;.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FEATURE_RESVIEW_POS_KEEP_AT_SEARCH;__STDC_WANT_SECURE_LIB__=1;_UNICODE;UNICODE;CONFIG_DIALOG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;WIN32;_DEBUG;_WINDOWS;_USRDLL;AnalysePlugin_EXPORTS;RESULT_COLORING;TIXML_USE_STL;TIXMLA_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -264,7 +264,7 @@
     </PreBuildEvent>
     <ClCompile>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\Dlg;.\tcl;.\version;.\DockingFeature;.\;.\lexilla\include;.\lexilla\lexlib;.\scintilla\src;.\scintilla\include;.\PowerEditor\src;.\PowerEditor\src\MISC\Common;.\PowerEditor\src\MISC\PluginsManager;.\PowerEditor\src\MISC\SysMsg;.\PowerEditor\src\ScintillaComponent;.\PowerEditor\src\TinyXml;.\PowerEditor\src\TinyXml\tinyXmlA;.\PowerEditor\src\WinControls;.\PowerEditor\src\WinControls\ColourPicker;.\PowerEditor\src\WinControls\ContextMenu;.\PowerEditor\src\WinControls\DockingWnd;.\PowerEditor\src\WinControls\ImageListSet;.\PowerEditor\src\WinControls\OpenSaveFileDialog;.\PowerEditor\src\WinControls\shortcut;.\PowerEditor\src\WinControls\StaticDialog;.\PowerEditor\src\WinControls\TabBar;.\PowerEditor\src\WinControls\ToolBar;.\PowerEditor\src\WinControls\AboutDlg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FEATURE_RESVIEW_POS_KEEP_AT_SEARCH;_UNICODE;_CRT_SECURE_NO_WARNINGS;__STDC_WANT_SECURE_LIB__=1;_CRT_NON_CONFORMING_SWPRINTFS;UNICODE;CONFIG_DIALOG;WIN32;NDEBUG;_WINDOWS;_USRDLL;AnalysePlugin_EXPORTS;RESULT_COLORING;TIXML_USE_STL;TIXMLA_USE_STL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
