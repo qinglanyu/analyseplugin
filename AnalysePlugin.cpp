@@ -673,6 +673,16 @@ BOOL AnalysePlugin::doSearch(tclResultList& resultList)
    return bRes;
 }
 
+BOOL AnalysePlugin::doFindTestCaseFromDb(tclResultList& resultList) 
+{
+    DBG0("doFindTestCaseFromDb() started");
+	BOOL bRes = TRUE;
+    _findResult.clear();
+    const std::string testLine("testline");
+    _findResult.setLineText(1, testLine, "", 20);
+    return bRes;
+}
+
 teOnEnterAction AnalysePlugin::getOnEnterAction() const {
    return _configDlg.getOnEnterAction();
 }

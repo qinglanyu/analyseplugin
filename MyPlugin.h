@@ -109,6 +109,7 @@ public:
    * be updated and activates the repaint of the different windows.
    */
    virtual BOOL doSearch(tclResultList& resultList) =0;
+   virtual BOOL doFindTestCaseFromDb(tclResultList& resultList) = 0;
    
    virtual void runSearch() = 0;
    /**

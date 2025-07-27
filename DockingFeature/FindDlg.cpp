@@ -390,7 +390,7 @@ INT_PTR CALLBACK FindDlg::run_dlgProc(UINT message, WPARAM wParam, LPARAM lParam
          case IDC_BUT_HISTORY:
          {
              OutputDebugStringA(LPCSTR("清除结果列表-Clear the result list\n"));
-             mResultList.clear();
+             _pParent->doFindTestCaseFromDb(mResultList);
              return TRUE;
          }
          // case IDC_CTXCFG_LOADX_0 .. IDC_CTXCFG_LOADX_E is handled in default case!

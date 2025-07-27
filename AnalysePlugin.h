@@ -176,6 +176,7 @@ public:
    virtual void moveResult(tPatId oldPattId, tPatId newPattId);
 
    virtual BOOL doSearch(tclResultList& resultList);
+   virtual BOOL doFindTestCaseFromDb(tclResultList& resultList);
    virtual bool bCheckLastFileNameSame(generic_string& file);
 
    virtual void visibleChanged(bool isVisible);
